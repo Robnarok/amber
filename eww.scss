@@ -1,26 +1,26 @@
-// Amber
+// Catppuccin
 * {
   all: unset; //Unsets everything so you can style everything from scratch
 }
 
 //Global Styles
 .bar0 {
-  background-color: #1E1F29;
-  color: #F8F8F2;
+  background-color: #1E1E28;
+  color: #A4B9EF;
   padding: 0;
   border-bottom: 2px solid;
-  border-color: #FFB300;
+  border-color: #F0AFE1;
   border-radius: 0;
   font-family: Iosevka Nerd Font;
   font-size: 13px;
 }
 
 .bar1 {
-  background-color: #1E1F29;
-  color: #F8F8F2;
+  background-color: #1E1E28;
+  color: #A4B9EF;
   padding: 0;
   border-bottom: 2px solid;
-  border-color: #FFB300;
+  border-color: #F0AFE1;
   border-radius: 0;
   font-family: Iosevka Nerd Font;
   font-size: 13px;
@@ -35,7 +35,7 @@
 
 .metric scale trough highlight {
   all: unset;
-  background-color: #FFB300;
+  background-color: #F0AFE1;
   color: #000000;
   border-radius: 10px;
 }
@@ -50,7 +50,7 @@
 }
 .metric scale trough highlight {
   all: unset;
-  background-color: #FFB300;
+  background-color: #F0AFE1;
   color: #000000;
   border-radius: 10px;
 }
@@ -70,24 +70,24 @@
 }
 
 .ws-button-mine {
-  color: #1E1F29;
-  background-color: #FFB300;
+  color: #1E1E28;
+  background-color: #F0AFE1;
   border-radius: 4px;
 }
 .ws-button-visible {
-  color: #FFB300;
+  color: #F0AFE1;
 }
 .ws-button-busy {
-  color: #E8BC0C;
+  color: #C6AAE8;
 }
 .ws-button {
-  color: #F8F8F2;
+  color: #A4B9EF;
 }
 
 .ws-layout {
   all: unset;
-  color: #1E1F29;
-  background-color: #FFB300;
+  color: #1E1E28;
+  background-color: #F0AFE1;
   border-radius: 0;
   padding-left: 15px;
   padding-right: 15px;
@@ -97,8 +97,8 @@
 }
 
 .box-launcher {
-  background-color: #FFB300;
-  color: #1E1F29;
+  background-color: #F0AFE1;
+  color: #1E1E28;
   font-size: 1.1em;
   font-weight:bold;
 }
@@ -110,5 +110,5 @@
 
 .clock {
   margin-right: 20px;
-  color: #F8F8F2;
+  color: #A4B9EF;
 }

@@ -22,7 +22,7 @@ STATUSBAR=0
 # To avoid issues colors.sh will check the theme name provided below and try
 # to fallback to the amber theme if what you provide is NULL or does not exist
 # in the array on line 12.
-source $SCRIPTPATH/scripts/colors.sh amber
+source $SCRIPTPATH/scripts/colors.sh catppuccin
 ##############################################################################
 
 
@@ -34,8 +34,8 @@ if [ -f "/tmp/leftwm-theme-down" ]; then
 fi
 ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
-# set the theme.toml config
-echo "LoadTheme $SCRIPTPATH/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
+# set the theme.ron config
+echo "LoadTheme $SCRIPTPATH/theme.ron" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
 ##############################################################################
 
 
@@ -77,19 +77,19 @@ fi
 
 
 # 2) START - set ONE wallpaper for all displays ----------------------------+
-#if [ -x "$(command -v feh)" ]; then
-#  feh --bg-fill "$SCRIPTPATH"/wallpapers/atlas-ark-gruvbox-simple-lines.png
-#fi
+if [ -x "$(command -v feh)" ]; then
+  feh --randomize --bg-fill "$HOME"/Pictures/Wallpaper/*
+fi
 # END ----------------------------------------------------------------------+
 
 
 # 3) START - set MULTIPLE wallpapers for all displays ----------------------+
 # NOTE: the last image path DO NOT end with "\"
-if [ -x "$(command -v feh)" ]; then
-  feh --bg-fill \
-  "$SCRIPTPATH"/wallpapers/atlas-ark-gruvbox-leftwm.png \
-  "$SCRIPTPATH"/wallpapers/atlas-ark-gruvbox-arch3.png
-fi
+#if [ -x "$(command -v feh)" ]; then
+#  feh --bg-fill \
+#  "$SCRIPTPATH"/wallpapers/atlas-ark-gruvbox-leftwm.png \
+#  "$SCRIPTPATH"/wallpapers/atlas-ark-gruvbox-arch3.png
+#fi
 # END ----------------------------------------------------------------------+
 ##############################################################################
 
@@ -180,4 +180,6 @@ case $STATUSBAR in
 esac
 ##############################################################################
 
+/usr/bin/nm-applet &
+/usr/bin/mate-power-manager &
 

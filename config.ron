@@ -32,7 +32,7 @@
     auto_derive_workspaces: true,
     keybind: [
         (command: Execute, value: "$HOME/.config/leftwm/themes/current/rofi/launcher.sh", modifier: ["modkey"], key: "d"),
-        (command: Execute, value: "bwm", modifier: ["modkey", "Shift"], key: "s"),
+        (command: Execute, value: "$HOME/.config/leftwm/themes/current/rofi/window.sh", modifier: ["modkey"], key: "s"),
         (command: Execute, value: "$HOME/.config/leftwm/themes/current/rofi/rofimoji.sh", modifier: ["modkey", "Shift"], key: "d"),
         (command: Execute, value: "alacritty", modifier: ["modkey", "Shift"], key: "Return"),
         (command: GotoTag, value: "2", modifier: ["modkey"], key: "Return"),
